@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  notes-app:
+    image: hexsorcerer/notes-app
+    build: .
+    volumes:
+      # The :Z resolves a permissions issue with SELinux, see:
+      # https://stackoverflow.com/questions/24288616/permission-denied-on-accessing-host-directory-in-docker
+      - .:/app:Z
