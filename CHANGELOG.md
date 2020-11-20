@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2020-11-19
+- Add npm package file
+- Add validator
+- Write additional line to output file
+
 ## [0.2.2] - 2020-11-19
 ### Added
 - Add missing release notes for 0.2.1 (my bad)
