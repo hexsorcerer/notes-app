@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2020-11-19
+### Added
+- Add missing release notes for 0.2.1 (my bad)
+
+## [0.2.1] - 2020-11-18
+### Added
+- Add changelog
+- Add output file 'notes.txt' to gitignore
+- Add usage notes to readme
+
 ## [0.2.0] - 2020-11-18
 ### Added
 - New notes module
