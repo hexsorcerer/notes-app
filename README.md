@@ -13,6 +13,14 @@ This will run the application in a Docker container, write it's output file (whi
 
 The first time this is run, it needs to update the packages from npm, so it may appear to hang momentarily, but be patient and it should complete successfully. If you have a newer machine with faster WiFi, this may not even be an issue, but I'm developing this on a nine year old Dell XPS 17 with 802.11n so I thought I'd mention it just in case. I might look into providing some output at this step just so it's clear what's happening.
 
+In order to see the colored output, you must enter the continer like so:
+<code>
+docker container exec -it <i>containername</i> bash
+node app.js
+</code>
+
+This should print 'Success!' to stdout with a green background.
+
 Finally, cleanup when you're done:  
 <code>
 docker-compose down
