@@ -11,6 +11,8 @@ docker-compose up
 
 This will run the application in a Docker container, write it's output file (which is called notes.txt), and then exit.
 
+The first time this is run, it needs to update the packages from npm, so it may appear to hang momentarily, but be patient and it should complete successfully. If you have a newer machine with faster WiFi, this may not even be an issue, but I'm developing this on a nine year old Dell XPS 17 with 802.11n so I thought I'd mention it just in case. I might look into providing some output at this step just so it's clear what's happening.
+
 Finally, cleanup when you're done:  
 <code>
 docker-compose down

@@ -3,6 +3,7 @@ version: "3.7"
 services:
   notes-app:
     image: hexsorcerer/notes-app
+    command: npm install
     build: .
     volumes:
       # The :Z resolves a permissions issue with SELinux, see:
