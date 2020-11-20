@@ -6,11 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2020-11-19
+### Added
+- Add chalk package
+- Write success message to stdout
+
 ## [0.3.1] - 2020-11-19
+### Added
 - Add npm command to Dockerfile
 - package-lock updated to file version 2
 
 ## [0.3.0] - 2020-11-19
+### Added
 - Add npm package file
 - Add validator
 - Write additional line to output file
