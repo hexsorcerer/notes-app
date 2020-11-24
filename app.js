@@ -1,6 +1,7 @@
 const fs = require('fs')
 const validator = require('validator')
 const chalk = require('chalk')
+const yargs = require('yargs')
 const getNotes = require('./notes.js')
 
 fs.writeFileSync('notes.txt', 'This file was created by Node.js!')
