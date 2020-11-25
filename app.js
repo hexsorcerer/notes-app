@@ -1,14 +1,16 @@
 const fs = require('fs')
-const validator = require('validator')
 const chalk = require('chalk')
-const yargs = require('yargs')
-const getNotes = require('./notes.js')
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
 
-fs.writeFileSync('notes.txt', 'This file was created by Node.js!')
-fs.appendFileSync('notes.txt', '\n')
-fs.appendFileSync('notes.txt', getNotes())
-fs.appendFileSync('notes.txt', '\n')
-fs.appendFileSync('notes.txt', 'Valid URL: ' + validator.isURL('https://github.com/hexsorcerer'))
-fs.appendFileSync('notes.txt', '\n')
+yargs(hideBin(process.argv)).command({
+    command: 'add <title> <note>',
+    description: 'Add a new note',
+    handler: function (argv) {
+        fs.writeFileSync(argv.title, argv.note + '\n')
+    }
+})
+.help()
+.argv
 
 console.log(chalk.black.bgGreen('Success!'))
