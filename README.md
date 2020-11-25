@@ -2,6 +2,19 @@
 The first sample application of 'The Complete Node.js Developer Course (3rd Edition) on Udemy.
 
 # How do I run this?
+## Command line
+From the command line, run one of the following commands.
+
+To add a note:  
+<code>
+node app.js add \<title\> \<notes\>
+</code>
+
+This will create a new file named <i>title</i> (or overwrite the exisiting one), and write the line <i>notes</i> to it, followed by a new line.
+
+## Docker
+
+### Update: The Docker method is currently deprecated. It doesn't really make sense at the moment since the application is not a long-running task, and variable command line options need to be passed in now. Leaving in case we revisit this in the future.
 First, make sure you have Docker installed.  
 
 Then, to run the application:  
@@ -13,7 +26,7 @@ This will run the application in a Docker container, write it's output file (whi
 
 The first time this is run, it needs to update the packages from npm, so it may appear to hang momentarily, but be patient and it should complete successfully. If you have a newer machine with faster WiFi, this may not even be an issue, but I'm developing this on a nine year old Dell XPS 17 with 802.11n so I thought I'd mention it just in case. I might look into providing some output at this step just so it's clear what's happening.
 
-In order to see the colored output, you must enter the continer like so:
+In order to see the colored output, you must enter the continer like so:  
 <code>
 docker container exec -it <i>containername</i> bash
 node app.js
