@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2020-11-29
+### Added
+- Added a new command 'remove' (placeholder)
+
 ## [0.5.1] - 2020-11-24
 ### Added
 - Added new instructions on how to run the application
