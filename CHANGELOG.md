@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added a new command 'remove' (placeholder)
 - Added a new command 'list' (placeholder)
+- Added a new command 'read' (placeholder)
 
 ## [0.5.1] - 2020-11-24
 ### Added
