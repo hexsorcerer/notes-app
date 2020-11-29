@@ -23,4 +23,14 @@ yargs(hideBin(process.argv)).command({
 .help()
 .argv
 
+yargs(hideBin(process.argv)).command({
+    command: 'list <title>',
+    description: 'List all the notes',
+    handler: function (argv) {
+        console.log('Listing notes')
+    }
+})
+.help()
+.argv
+
 console.log(chalk.black.bgGreen('Success!'))

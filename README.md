@@ -19,6 +19,13 @@ node app.js remove \<title\> \<notes\>
 
 This is a placeholder command that logs a message to the console.
 
+To list notes:  
+<code>
+node app.js list \<title\>
+</code>
+
+This is a placeholder command that logs a message to the console.
+
 ## Docker
 
 ### Update: The Docker method is currently deprecated. It doesn't really make sense at the moment since the application is not a long-running task, and variable command line options need to be passed in now. Leaving in case we revisit this in the future.
