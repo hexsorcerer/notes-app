@@ -8,9 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.0] - 2020-11-29
 ### Added
-- Added a new command 'remove' (placeholder)
-- Added a new command 'list' (placeholder)
-- Added a new command 'read' (placeholder)
+- A new command 'remove' (placeholder)
+- A new command 'list' (placeholder)
+- A new command 'read' (placeholder)
+- Help menu descriptions for all commands
+- Readme instructions for new commands
 
 ## [0.5.1] - 2020-11-24
 ### Added
