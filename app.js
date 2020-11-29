@@ -26,7 +26,7 @@ yargs(hideBin(process.argv))
     }
 })
 .command({
-    command: 'list <title> <note>',
+    command: 'read <title> <note>',
     description: 'Read a note',
     handler: function (argv) {
         console.log('Reading note')
