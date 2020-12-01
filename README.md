@@ -7,17 +7,17 @@ From the command line, run one of the following commands.
 
 To add a note:  
 <code>
-node app.js add \<title\> \<notes\>
+node app.js add \<title\> \<note\>
 </code>
 
-This will create a new file named <i>title</i> (or overwrite the exisiting one), and write the line <i>notes</i> to it, followed by a new line.
+This will create a new file named <i>notes.json</i> (or create a new one), and write a JSON object to the file containing the title and the note.
 
 To remove a note:  
 <code>
-node app.js remove \<title\> \<notes\>
+node app.js remove \<title\> \<note\>
 </code>
 
-This is a placeholder command that logs a message to the console.
+Looks for a note with the given title in <i>notes.json</i>, and removes it if it is found. If it is not found, the file does not change.
 
 To list notes:  
 <code>
