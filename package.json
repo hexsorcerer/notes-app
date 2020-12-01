@@ -1,7 +1,7 @@
 {
   "name": "notes-app",
-  "version": "0.6.0",
-  "description": "The first sample application of 'The Complete Node.js Developer Course (3rd Edition) on Udemy",
+  "version": "0.7.0",
+  "description": "The first sample application of 'The Complete Node.js Developer Course (3rd Edition)' on Udemy",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
