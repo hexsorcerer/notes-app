@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0] - 2020-11-30
+### Changed
+- The add note command now works!
+- The remove note command now works!
+
 ## [0.6.0] - 2020-11-29
 ### Added
 - A new command 'remove' (placeholder)
