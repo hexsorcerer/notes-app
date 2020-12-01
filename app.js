@@ -13,10 +13,10 @@ yargs(hideBin(process.argv))
     }
 })
 .command({
-    command: 'remove <title> <note>',
+    command: 'remove <title>',
     description: 'Remove an existing note',
     handler: function (argv) {
-        console.log('Removing the note')
+        notes.removeNote(argv.title)
     }
 })
 .command({
