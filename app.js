@@ -2,20 +2,21 @@ const fs = require('fs')
 const chalk = require('chalk')
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
+const notes = require('./notes.js')
 
 yargs(hideBin(process.argv))
 .command({
     command: 'add <title> <note>',
     description: 'Add a new note',
-    handler: function (argv) {
-        fs.writeFileSync(argv.title, argv.note + '\n')
+    handler: (argv) => {
+        notes.addNote(argv.title, argv.note)
     }
 })
 .command({
-    command: 'remove <title> <note>',
+    command: 'remove <title>',
     description: 'Remove an existing note',
     handler: function (argv) {
-        console.log('Removing the note')
+        notes.removeNote(argv.title)
     }
 })
 .command({
