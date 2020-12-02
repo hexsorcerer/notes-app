@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2020-12-01
+### Added
+- The add note command has a new success message
+- The remove note command has a new success message
+- Adding a new note now checks for duplicate titles, and fails if one is found
+- Removing a note now shows a fail message if the title isn't found
+- Now with more comments!
+
+### Removed
+- The default success message has been replaced by the new custom messages
+- Some unneccessary vertical whitespace (for devs only)
+
 ## [0.7.0] - 2020-11-30
 ### Changed
 - The add note command now works!

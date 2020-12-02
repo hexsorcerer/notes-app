@@ -8,32 +8,30 @@ yargs(hideBin(process.argv))
 .command({
     command: 'add <title> <note>',
     description: 'Add a new note',
-    handler: (argv) => {
+    handler(argv) {
         notes.addNote(argv.title, argv.note)
     }
 })
 .command({
     command: 'remove <title>',
     description: 'Remove an existing note',
-    handler: function (argv) {
+    handler(argv) {
         notes.removeNote(argv.title)
     }
 })
 .command({
     command: 'list <title>',
     description: 'List all the notes',
-    handler: function (argv) {
+    handler(argv) {
         console.log('Listing notes')
     }
 })
 .command({
     command: 'read <title> <note>',
     description: 'Read a note',
-    handler: function (argv) {
+    handler(argv) {
         console.log('Reading note')
     }
 })
 .help()
 .argv
-
-console.log(chalk.black.bgGreen('Success!'))
