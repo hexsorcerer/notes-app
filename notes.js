@@ -4,14 +4,21 @@ const fs = require('fs')
 const addNote = (title, body) => {
     const notes = loadNotes()
 
-    notes.push({
-        title: title,
-        body: body
-    })
+    const duplicates = findDuplicates(notes, title)
 
-    saveNotes(notes)
+    if (duplicates.length > 0) {
+        console.log(chalk.red.inverse('Duplicate title found, note not added'))
+    }
+    else {
+        notes.push({
+            title: title,
+            body: body
+        })
 
-    console.log(chalk.green.inverse('Note added'))
+        saveNotes(notes)
+
+        console.log(chalk.green.inverse('Note added'))
+    }
 }
 
 const removeNote = (title) => {
@@ -40,6 +47,12 @@ const loadNotes = () => {
     catch (e) {
         return []
     }
+}
+
+const findDuplicates = (notes, title) => {
+    return notes.filter((note) => {
+        return title === note.title
+    })
 }
 
 module.exports = {
