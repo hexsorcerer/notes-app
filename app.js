@@ -35,5 +35,3 @@ yargs(hideBin(process.argv))
 })
 .help()
 .argv
-
-console.log(chalk.black.bgGreen('Success!'))
