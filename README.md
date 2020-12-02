@@ -12,6 +12,8 @@ node app.js add \<title\> \<note\>
 
 This will create a new file named <i>notes.json</i> (or create a new one), and write a JSON object to the file containing the title and the note. A message indicating success will be printed to the output.
 
+If the note being added is a duplicate, it will not be added and a failure message will be printed to the output instead.
+
 To remove a note:  
 <code>
 node app.js remove \<title\> \<note\>
