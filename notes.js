@@ -28,9 +28,14 @@ const removeNote = (title) => {
         return note.title !== title
     })
 
-    saveNotes(notesToKeep)
+    if (notesToKeep.length === notes.length) {
+        console.log(chalk.red.inverse('Title not found, note not removed'))
+    }
+    else {
+        saveNotes(notesToKeep)
 
-    console.log(chalk.green.inverse('Note removed'))
+        console.log(chalk.green.inverse('Note removed'))
+    }
 }
 
 const saveNotes = (notes) => {
