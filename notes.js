@@ -9,7 +9,6 @@ const fs = require('fs')
  */
 const addNote = (title, body) => {
     const notes = loadNotes()
-
     const duplicates = findDuplicates(notes, title)
 
     if (duplicates.length > 0) {
@@ -22,7 +21,6 @@ const addNote = (title, body) => {
         })
 
         saveNotes(notes)
-
         console.log(chalk.green.inverse('Note added'))
     }
 }
@@ -34,7 +32,6 @@ const addNote = (title, body) => {
  */
 const removeNote = (title) => {
     const notes = loadNotes()
-
     const notesToKeep = notes.filter((note) => {
         return note.title !== title
     })
@@ -44,7 +41,6 @@ const removeNote = (title) => {
     }
     else {
         saveNotes(notesToKeep)
-
         console.log(chalk.green.inverse('Note removed'))
     }
 }
