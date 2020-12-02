@@ -1,3 +1,4 @@
+const chalk = require('chalk')
 const fs = require('fs')
 
 const addNote = (title, body) => {
@@ -9,6 +10,8 @@ const addNote = (title, body) => {
     })
 
     saveNotes(notes)
+
+    console.log(chalk.green.inverse('Note added'))
 }
 
 const removeNote = (title) => {
@@ -19,6 +22,8 @@ const removeNote = (title) => {
     })
 
     saveNotes(notesToKeep)
+
+    console.log(chalk.green.inverse('Note removed'))
 }
 
 const saveNotes = (notes) => {
