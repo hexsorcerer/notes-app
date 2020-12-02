@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The add note command has a new success message
 - The remove note command has a new success message
 - Adding a new note now checks for duplicate titles, and fails if one is found
+- Removing a note now shows a fail message if the title isn't found
 
 ### Removed
 - The default success message has been replaced by the new custom messages
