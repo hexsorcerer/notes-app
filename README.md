@@ -10,14 +10,14 @@ To add a note:
 node app.js add \<title\> \<note\>
 </code>
 
-This will create a new file named <i>notes.json</i> (or create a new one), and write a JSON object to the file containing the title and the note.
+This will create a new file named <i>notes.json</i> (or create a new one), and write a JSON object to the file containing the title and the note. A message indicating success will be printed to the output.
 
 To remove a note:  
 <code>
 node app.js remove \<title\> \<note\>
 </code>
 
-Looks for a note with the given title in <i>notes.json</i>, and removes it if it is found. If it is not found, the file does not change.
+Looks for a note with the given title in <i>notes.json</i>, and removes it if it is found. If it is not found, the file does not change. A message indicating success will be printed to the output.
 
 To list notes:  
 <code>
