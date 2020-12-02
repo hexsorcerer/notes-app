@@ -1,6 +1,12 @@
 const chalk = require('chalk')
 const fs = require('fs')
 
+/**
+ * Adds the note with the given title and body to a file named notes.json. If a
+ * note with the given title already exists, it is not added.
+ * @param {string} title The title of the note to add.
+ * @param {string} body The body of the note to add.
+ */
 const addNote = (title, body) => {
     const notes = loadNotes()
 
@@ -21,6 +27,11 @@ const addNote = (title, body) => {
     }
 }
 
+/**
+ * Removes a note from the file notes.json. If a note with the given title does
+ * not exist, it is not removed.
+ * @param {string} title The title of the note to remove.
+ */
 const removeNote = (title) => {
     const notes = loadNotes()
 
@@ -38,11 +49,18 @@ const removeNote = (title) => {
     }
 }
 
+/**
+ * Saves the given notes to a file named notes.json.
+ * @param {object} notes The notes to save.
+ */
 const saveNotes = (notes) => {
     const notesAsJson = JSON.stringify(notes)
     fs.writeFileSync('notes.json', notesAsJson)
 }
 
+/**
+ * Loads the notes from a file names notes.json.
+ */
 const loadNotes = () => {
     try {
         const buffer = fs.readFileSync('notes.json')
@@ -54,6 +72,12 @@ const loadNotes = () => {
     }
 }
 
+/**
+ * Looks for a note with the given title, in the given notes. Returns any
+ * that are found.
+ * @param {object} notes The notes to check.
+ * @param {string} title The title to look for.
+ */
 const findDuplicates = (notes, title) => {
     return notes.filter((note) => {
         return title === note.title
