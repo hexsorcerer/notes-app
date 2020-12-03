@@ -20,10 +20,10 @@ yargs(hideBin(process.argv))
     }
 })
 .command({
-    command: 'list <title>',
+    command: 'list',
     description: 'List all the notes',
     handler(argv) {
-        console.log('Listing notes')
+        notes.listNotes()
     }
 })
 .command({

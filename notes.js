@@ -46,13 +46,13 @@ const removeNote = (title) => {
 }
 
 /**
- * Lists all notes.
+ * Prints a list of all note titles.
  */
 const listNotes = () => {
     const notes = loadNotes()
-    console.log(chalk.green('Here\'s the notes:'))
+    console.log(chalk.inverse('Your notes:'))
 
-    notes.foreach((note) => {
+    notes.forEach((note) => {
         console.log(note.title)
     })
 }
@@ -94,5 +94,6 @@ const findDuplicates = (notes, title) => {
 
 module.exports = {
     addNote: addNote,
-    removeNote: removeNote
+    removeNote: removeNote,
+    listNotes: listNotes
 }
