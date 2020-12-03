@@ -58,6 +58,25 @@ const listNotes = () => {
 }
 
 /**
+ * Prints the body of the note with the given title from the file notes.json.
+ * @param {string} title 
+ */
+const readNote = (title) => {
+    const notes = loadNotes()
+    const note = notes.find((note) => {
+        return note.title === title
+    })
+
+    if (note) {
+        console.log(chalk.inverse(note.title))
+        console.log(note.body)
+    }
+    else {
+        console.log(chalk.red.inverse('Note not found'))
+    }
+}
+
+/**
  * Saves the given notes to a file named notes.json.
  * @param {object} notes The notes to save.
  */
@@ -95,5 +114,6 @@ const findDuplicates = (notes, title) => {
 module.exports = {
     addNote: addNote,
     removeNote: removeNote,
-    listNotes: listNotes
+    listNotes: listNotes,
+    readNote: readNote
 }
