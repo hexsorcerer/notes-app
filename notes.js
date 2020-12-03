@@ -46,7 +46,7 @@ const removeNote = (title) => {
 }
 
 /**
- * Prints a list of all note titles.
+ * Prints a list of all note titles from the file notes.json.
  */
 const listNotes = () => {
     const notes = loadNotes()
