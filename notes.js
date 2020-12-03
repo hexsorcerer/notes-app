@@ -46,6 +46,18 @@ const removeNote = (title) => {
 }
 
 /**
+ * Lists all notes.
+ */
+const listNotes = () => {
+    const notes = loadNotes()
+    console.log(chalk.green('Here\'s the notes:'))
+
+    notes.foreach((note) => {
+        console.log(note.title)
+    })
+}
+
+/**
  * Saves the given notes to a file named notes.json.
  * @param {object} notes The notes to save.
  */
