@@ -23,10 +23,10 @@ Looks for a note with the given title in <i>notes.json</i>, and removes it if it
 
 To list notes:  
 <code>
-node app.js list \<title\>
+node app.js list
 </code>
 
-This is a placeholder command that logs a message to the console.
+Prints a list of all the note titles contained in the file <i>notes.json</i>.
 
 To read a note:  
 <code>

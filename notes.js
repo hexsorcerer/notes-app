@@ -46,6 +46,18 @@ const removeNote = (title) => {
 }
 
 /**
+ * Prints a list of all note titles from the file notes.json.
+ */
+const listNotes = () => {
+    const notes = loadNotes()
+    console.log(chalk.inverse('Your notes:'))
+
+    notes.forEach((note) => {
+        console.log(note.title)
+    })
+}
+
+/**
  * Saves the given notes to a file named notes.json.
  * @param {object} notes The notes to save.
  */
@@ -82,5 +94,6 @@ const findDuplicates = (notes, title) => {
 
 module.exports = {
     addNote: addNote,
-    removeNote: removeNote
+    removeNote: removeNote,
+    listNotes: listNotes
 }
