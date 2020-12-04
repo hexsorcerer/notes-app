@@ -23,17 +23,17 @@ Looks for a note with the given title in <i>notes.json</i>, and removes it if it
 
 To list notes:  
 <code>
-node app.js list \<title\>
+node app.js list
 </code>
 
-This is a placeholder command that logs a message to the console.
+Prints a list of all the note titles contained in the file <i>notes.json</i>.
 
 To read a note:  
 <code>
-node app.js read \<title\> \<note\>
+node app.js read \<title\>
 </code>
 
-This is a placeholder command that logs a message to the console.
+Prints the note with the given title from notes.json. An error message will be printed if the note is not found.
 
 ## Docker
 
