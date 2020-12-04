@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.9.0] - 2020-12-02
 ### Added
 - The list note command is now working as it should
+- The read note command is now working as it should
 
 ## [0.8.0] - 2020-12-01
 ### Added

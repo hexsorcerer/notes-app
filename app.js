@@ -27,10 +27,10 @@ yargs(hideBin(process.argv))
     }
 })
 .command({
-    command: 'read <title> <note>',
+    command: 'read <title>',
     description: 'Read a note',
     handler(argv) {
-        console.log('Reading note')
+        notes.readNote(argv.title)
     }
 })
 .help()
